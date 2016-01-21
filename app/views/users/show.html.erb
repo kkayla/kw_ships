@@ -1,0 +1,26 @@
+<!-- Page to show the logged-in @user -->
+
+<h5>Log Out</h5>
+<h2>Welcome: <%=@user.username%></h2>
+<br>
+ <%= @user.email %>
+<br>
+  <b>Boats:</b>
+
+    <% @user.boats.each do |post| %>
+    <b></b><%= link_to boat.name, boat %><b>
+    <br>
+    <p><%= boat.user.username %></p>
+    <%end%>
+<br>
+
+<%= link_to "Create a Boat", new_boat_path %>
+
+<%= link_to "Edit Your Account", edit_user_path(@user)%>
+<br>
+
+<%= link_to "Delete You Account", @user, method: :delete %>
+<br>
+
+ <%= @user.email %>
+</p>

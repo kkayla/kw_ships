@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  max_container: 1
+  boat_location: MyString
+
+two:
+  name: MyString
+  max_container: 1
+  boat_location: MyString

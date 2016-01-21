@@ -1,0 +1,30 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+<b><h1> k.dub subs &copy; 2016 </h1></b>
+
+<h2>Log In</h2>
+<br>
+<%=form_tag login_path do %>
+<%=label_tag(:username)%>
+<%=text_field_tag(:username)%>
+<%=label_tag(:password)%>
+<%=password_field_tag(:password)%>
+<%=submit_tag "Log In"%>
+<%end%>
+
+<!-- Or, Sign Up -->
+<!-- SignUp Form Here -->
+<h2>sign up</h2>
+<%= form_for @user do |f| %>
+<%= label_tag(:fname)%>
+<%=text_field_tag(:fname)%>
+<%= label_tag(:lname) %>
+<%= text_field_tag(:lname)%>
+<%= label_tag(:email) %>
+<%= text_field_tag(:email) %>
+<%= f.label :username %>
+<%= f.text_field :username %>
+<%= f.label :password%>
+<%= f.password_field :password%>
+<%=f.submit :create %>
+<% end %>

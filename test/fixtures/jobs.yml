@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  job_containers: 1
+  job_cargo_type: MyString
+  job_cost: 9.99
+  job_destination: MyString
+
+two:
+  job_containers: 1
+  job_cargo_type: MyString
+  job_cost: 9.99
+  job_destination: MyString
